@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html lang="fr" >
+
+	<head>
+		<meta charset="UTF-8" />				
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
+		<title>Tservices</title>		
+	    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery/jquery-ui/jquery-ui.js"></script>
+		
+		
+		<script type="text/javascript" src="jquery/jquery-migrate.js"></script>
+		<script type="text/javascript" src="jquery/jquery.autocomplete.min.js"></script>	
+		
+		
+		<script type="text/javascript" src="slick/slick.js"></script>
+		<script type="text/javascript" src="js/lean-modal.js"></script>			
+		<script type="text/javascript" src="js/nav.js"></script>
+	
+	  
+		<script type="text/javascript" src="js/script.js"></script>	
+	       
+		<link rel='stylesheet' id='mc-front-style-css'  href='css/mc-font-min.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='customizr-common-css'  href='css/tc_common.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='customizr-skin-css'  href='css/blue.css' type='text/css' media='all' />
+		<link rel='stylesheet' type="text/css" href='css/style.css' />
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>		
+		 <script type="text/javascript" src="js/modernizr.js"></script>
+	</head>			
+	
+	<body class="page page-child page-template-default tc-fade-hover-links tc-no-sidebar tc-side-menu tc-no-sticky-header no-navbar skin-blue3 sn-left-mc_slide_top" itemscope >
+	  
+	  <nav id="tc-sn" class="tc-sn navbar" role="navigation">
+            <div class="tc-sn-inner nav-collapse">
+				<div class="span3 btn-toggle-nav sn-toggle pull-left">
+					<button type="button" class="btn menu-btn"  title="Close">
+						<span class="icon-bar"></span><span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+			    </button>
+			    </div>
+			    <div class="sn-nav-wrapper">
+					<div class="menu-main-container">
+						<ul id="menu-main" class="nav sn-nav">
+							<li id="" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown ">
+							<a target="_blank" href="">Recherche <strong class="caret"></strong></a>
+						<ul class="dropdown-menu">
+							<li id="" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-has-children dropdown-submenu menu-item-68863"><a href="">Par quartier</a>
+	
+							<li id="" class="menu-item menu-item-type-custom menu-item-object-custom "><a target="_blank" href="">Par catégorie</a></li>
+							<li id="" class="menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" href="">Par produits et services</a></li>
+
+						</ul>
+						</ul>			
+					</div>
+				</div>            
+			</div>
+        </nav>
+        
+    <div id="tc-page-wrap" class="">
+   
+  	<header class="tc-header clearfix row-fluid tc-second-menu-in-sn-before-when-mobile tc-tagline-on tc-title-logo-on  tc-shrink-on tc-menu-on logo-right" role="banner">
+		<div class="brand span2 pull-right">
+		<a id="login-btn"  href="#modal"  class="">Se connecter</a>
+          
+		</div>
+
+
+	<div class="navbar-wrapper clearfix span9">
+		<div class="navbar resp">
+			<div class="navbar-inner" role="navigation">
+				<div class="row-fluid">
+						
+					<div class="btn-toggle-nav sn-toggle pull-left">
+						<button type="button" class="btn menu-btn"  title="Open the menu">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+					</div>          		
+				</div>
+			</div>
+		</div>
+    </div>
+
+
+    </header>
+
+	</div>
+	
+	<div id="search-layout">
+		<div class="search-logo">
+        <a class="site-logo" href="" title="Tservices"><img src="img/logo.png"></a>
+		</div>
+		<div id="search-box">		
+			<form id="search-form" action="/search" method="GET">
+			<div class="search-wrapper1">				
+					<div class="box">
+						<div class="container-2">
+							<img src="img/search-input.png">
+							<input id="business-input"  type="search" id="search" placeholder="Quoi ?"  name="search_terms" tabindex="1"/>
+							
+						</div>
+					</div>										
+			</div>
+			
+			<div class="search-wrapper2">		
+					<div class="box">
+						<div class="container-2">
+								<span class="icon"><img src="img/location-input.png"></span>
+								<input id="district-input" type="search" id="search" placeholder=""  name="search_district" tabindex="2"/>
+							</div>
+					</div>							
+			</div>
+			<button type="submit" value="Go" id="search-button">
+				Go
+			</button>
+			</form>
+		</div>			
+	
+	</div>
+		<div class="categories-list">
+		<ul>	
+			<li class="arrow-left arrow"><img src="img/arrow-left.png"></li>
+			<div class="box-inner">
+				<li class="bar-cat"><img class="cat-icon" src="img/home.png">Maison</li>
+				<li class="bar-cat"><img class="cat-icon" src="img/cart.png">Shopping</li>
+				<li class="bar-cat"><img class="cat-icon" src="img/surgeon.png">Santé</li>
+				<li class="bar-cat"><img class="cat-icon" src="img/repair.png">Aide à domicile</li>
+				<li class="bar-cat"><img class="cat-icon" src="img/tree.png">Jardinage</li>
+				<li class="bar-cat"><img class="cat-icon" src="img/carpenter.png">Menuisier</li>
+			</div>
+			<li class="arrow-right arrow"><img src="img/arrow-right.png"></li>
+		
+		</ul>
+	</div>
+	<div class="content-box">			
+		
+		<div class="slider">
+  			
+				<div class="wrapper">				
+					<div class="card radius shadowDepth1">
+						<div class="card__image border-tlr-radius">
+							<img src="img/amoud.jpg" alt="image" class="border-tlr-radius">
+						</div>
+
+						<div class="card__content card__padding">
+							<div class="card__share">
+								<a id="share" class="share-toggle share-icon" href="#"></a>
+							</div>
+
+						
+
+							<article class="card__article">
+								<h5><a href="#">Patissier - S</a></h5>
+								<p>Amoud est l'une des enseignes spécialisées...</p>
+							</article>
+						</div>
+
+						<div class="card__action">
+							
+							<div class="card__author">
+								<img src="img/amoud-logo.jpg" alt="user">
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			
+  
+			
+				<div class="wrapper">				
+					<div class="card radius shadowDepth1">
+						<div class="card__image border-tlr-radius">
+							<img src="img/amoud.jpg" alt="image" class="border-tlr-radius">
+						</div>
+
+						<div class="card__content card__padding">
+							<div class="card__share">
+								<a id="share" class="share-toggle share-icon" href="#"></a>
+							</div>
+
+						
+
+							<article class="card__article">
+								<h5><a href="#">Patissier - S</a></h5>
+								<p>Amoud est l'une des enseignes spécialisées...</p>
+							</article>
+						</div>
+
+						<div class="card__action">
+							
+							<div class="card__author">
+								<img src="img/amoud-logo.jpg" alt="user">
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			
+  
+			
+				<div class="wrapper">				
+					<div class="card radius shadowDepth1">
+						<div class="card__image border-tlr-radius">
+							<img src="img/amoud.jpg" alt="image" class="border-tlr-radius">
+						</div>
+
+						<div class="card__content card__padding">
+							<div class="card__share">
+								<a id="share" class="share-toggle share-icon" href="#"></a>
+							</div>
+
+						
+
+							<article class="card__article">
+								<h5><a href="#">Patissier - S</a></h5>
+								<p>Amoud est l'une des enseignes spécialisées...</p>
+							</article>
+						</div>
+
+						<div class="card__action">
+							
+							<div class="card__author">
+								<img src="img/amoud-logo.jpg" alt="user">
+							
+							</div>
+						</div>
+					</div>
+				</div>
+				
+  
+			
+				<div class="wrapper">				
+					<div class="card radius shadowDepth1">
+						<div class="card__image border-tlr-radius">
+							<img src="img/amoud.jpg" alt="image" class="border-tlr-radius">
+						</div>
+
+						<div class="card__content card__padding">
+							<div class="card__share">
+								<a id="share" class="share-toggle share-icon" href="#"></a>
+							</div>
+
+						
+
+							<article class="card__article">
+								<h5><a href="#">Patissier - S</a></h5>
+								<p>Amoud est l'une des enseignes spécialisées...</p>
+							</article>
+						</div>
+
+						<div class="card__action">
+							
+							<div class="card__author">
+								<img src="img/amoud-logo.jpg" alt="user">
+							
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			
+		</div>
+		<button type="button" class="slick-prev">Previous</button>
+		<button type="button" class="slick-next">Next</button>
+		<!-- Login Form -->
+		<div >
+			<div id="modal" class="popupContainer" style="display:none;">
+					<header class="popupHeader">
+							<h4 style="color:#F26D71">Connexion<h4>
+							<span class="modal_close"><img src="img/close.png"></span>
+					</header>
+
+					<section class="popupBody">
+							<!-- Social Login -->
+							<div class="social_login">
+									<div class="">
+										<a class="social_box">							
+											<button class="loginBtn loginBtn--facebook">
+													Se connecter via Facebook
+											</button>
+										</a>
+										<a class="social_box">		
+											<button class="loginBtn loginBtn--google">
+													Se connecter via Google +
+											</button>
+										</a>								
+									</div>
+
+									
+
+									<div class="action_btns">
+											<div class="one_half"><a href="#" id="login_form" class="log-btn">Connexion</a></div>
+											<div class="one_half last"><a href="#" id="register_form" class="log-btn">Inscription</a></div>
+									</div>
+							</div>
+
+							<!-- Username & Password Login form -->
+							<div class="user_login">
+									<form>
+											<label>Email</label>
+											<input type="text" />
+											<br />
+
+											<label>Mot de passe</label>
+											<input type="password" />
+											<br />
+
+								
+
+											<div class="action_btns">
+													<div class="one_half"><a href="#" class="log-btn back_btn"><i class="fa fa-angle-double-left"></i> Retour</a></div>
+													<div class="one_half last"><a href="#" class="log-btn btn_red">Connexion</a></div>
+											</div>
+									</form>
+
+									<a href="#" class="forgot_password">Oublié ?</a>
+							</div>
+
+							<!-- Register Form -->
+							<div class="user_register">
+									<form>
+											<label>Nom</label>
+											<input type="text" />
+											<br />
+
+											<label>Email</label>
+											<input type="email" />
+											<br />
+
+											<label>Mot de passe</label>
+											<input type="password" />
+											<br />
+
+
+											<div class="action_btns">
+													<div class="one_half"><a href="#" class="log-btn back_btn"><i class="fa fa-angle-double-left"></i> Retour</a></div>
+													<div class="one_half last"><a href="#" class="log-btn btn_red">Inscription</a></div>
+											</div>
+									</form>
+							</div>
+					</section>
+			</div>
+		</div>
+	</div>
+	<footer id="footer" class="">
+         <div class="container footer-widgets ">
+            <div class="row widget-area" role="complementary">					
+				<div id="footer_one" class="span4">																
+					<aside id="nav_menu-5" class="widget widget_nav_menu">
+					<h3 class="widget-title">Pages</h3>
+						<div class="menu-footer-various-pages-container">
+							<ul id="menu-footer-various-pages" class="menu">					
+								<li id="menu-item-98324" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98324">
+									<a href="">Pages</a>
+								</li>
+							</ul>			
+						</div>
+					</aside>
+				</div>
+
+						
+				<div id="footer_two" class="span4">																
+					<aside id="nav_menu-3" class="widget widget_nav_menu">
+					<h3 class="widget-title">Startup</h3><div class="menu-legal-footer-menu-container">
+							<ul id="menu-legal-footer-menu" class="menu">
+								<li id="menu-item-135143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135143">
+									<a href="">Startup</a>
+								</li>
+							</ul>
+						</div>
+					</aside>
+				</div>
+
+						
+				<div id="footer_three" class="span4">
+																
+					<aside id="nav_menu-4" class="widget widget_nav_menu">
+					<h3 class="widget-title">Support</h3>
+						<div class="menu-forum-archives-container">
+							<ul id="menu-forum-archives" class="menu">
+								<li id="menu-item-94944" class="menu-item menu-item-type-post_type menu-item-object-forum menu-item-94944">
+									<a href="">Support</a>
+								</li>
+
+							</ul>
+						</div>
+					</aside>
+				</div>
+
+			</div>
+		</div>
+		<div class="colophon">
+			<div class="container">
+				<div class="row-fluid">
+					<div class="span3 social-block pull-left">
+						<a class="social-icon icon-feed" href="" title="Subscribe to my rss feed"></a>
+						<a class="social-icon icon-twitter" href="" title="Follow me on Twitter" target="_blank"></a>
+						<a class="social-icon icon-facebook" href="" title="Follow me on Facebook" target="_blank"></a>
+						<a class="social-icon icon-google" href="" title="Follow me on Google+" target="_blank"></a>
+					</div>
+        	    	<div class="span6 credits">
+						<p> · © 2016 <a href="" title="Tservices" rel="bookmark">Tservices</a> ·</p>			
+					</div>
+  			     </div>
+	      	</div>
+	    </div>
+	</footer>
+	      	
+	    	    
+	</body>
+
+<script>
+var box = $(".box-inner"), x;
+$(".arrow ").hover(function () {
+
+  if ($(this).hasClass("arrow-right")) {
+    x = ((box.width() / 2)) + box.scrollLeft();
+    box.animate({
+      scrollLeft: x,
+    })
+  } else {
+    x = ((box.width() / 2)) - box.scrollLeft();
+    box.animate({
+      scrollLeft: -x,
+    })
+  }
+}, 
+function () {
+    //stuff to do on mouse leave
+});
+
+</script>
+<script>
+$(document).ready(function($) {
+
+	$('.card__share > a').on('click', function(e){ 
+		e.preventDefault() // prevent default action - hash doesn't appear in url
+   		$(this).parent().find( 'div' ).toggleClass( 'card__social--active' );
+		$(this).toggleClass('share-expanded');
+    });
+  
+});
+ 
+</script>
+
+</html>
+                            
+     

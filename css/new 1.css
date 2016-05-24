@@ -1,0 +1,193 @@
+.badge,
+.label,
+sub,
+sup {
+    vertical-align: baseline
+}
+
+.clearfix:after,
+.container-fluid:after,
+.container:after,
+.dl-horizontal:after,
+.row-fluid:after,
+.row:after {
+    clear: both
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.btn.active,
+.btn:active,
+a:active,
+a:hover {
+    outline: 0
+}
+
+.clearfix:after,
+.clearfix:before {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+address,
+cite {
+    font-style: normal
+}
+
+body,
+button,
+input,
+input[type=submit],
+select,
+textarea {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block
+}
+
+audio,
+canvas,
+video {
+    display: inline-block
+}
+
+sub,
+sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+img {
+    max-width: 100%;
+    width: auto\9;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic
+}
+
+button,
+input,
+select,
+textarea {
+    margin: 0;
+    font-size: 100%;
+    vertical-align: middle
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit],
+input[type=radio],
+input[type=checkbox],
+label,
+select {
+    cursor: pointer
+}
+
+input[type=search] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield
+}
+
+textarea {
+    overflow: auto
+}
+
+@media print {
+    blockquote,
+    img,
+    pre,
+    tr {
+        page-break-inside: avoid
+    }
+    * {
+        text-shadow: none!important;
+        color: #000!important;
+        background: 0 0!important;
+        box-shadow: none!important
+    }
+    a,
+    a:visited {
+        text-decoration: underline
+    }
+    a[href]:after {
+        content: " (" attr(href) ")"
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")"
+    }
+    .ir a:after,
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: ""
+    }
+    blockquote,
+    pre {
+        border: 1px solid #999
+    }
+    thead {
+        display: table-header-group
+    }
+    img {
+        max-width: 100%!important
+    }
+    @page {
+        margin: .5cm
+    }
+    h2,
+    h3,
+    p {
+        orphans: 3;
+        widows: 3
+    }
+    h2,
+    h3 {
+        page-break-after: avoid
+    }
+}
+
+body {
+    background-color: #fff
+}

@@ -1,0 +1,26 @@
+
+[class*=-mc_slide_top] #tc-sn {
+    z-index: 100
+}
+
+
+.sn-left-mc_push #tc-sn,
+.sn-left-mc_push.sn-close #tc-sn,
+.sn-left-mc_slide_top #tc-sn,
+.sn-left-mc_slide_top.sn-close #tc-sn {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0)
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.btn.active,
+.btn:active,
+a:active,
+a:hover {
+    outline: 0
+}

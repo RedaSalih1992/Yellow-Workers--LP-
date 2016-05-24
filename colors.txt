@@ -1,0 +1,6 @@
+Primary: #40c4ff
+Secondary: #e1f5fe
+facebook:#325C94
+twitter:#00ABDC
+feed:#F19D2F
+g+:#EA3032
